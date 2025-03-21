@@ -1,0 +1,81 @@
+@use "../abstracts/variables/typography" as *;
+
+// text
+.is-uppercase {
+  text-transform: uppercase;
+}
+.is-left {
+  text-align: left;
+}
+.is-center {
+  text-align: center;
+}
+.is-right {
+  text-align: right;
+}
+.is-justify {
+  text-align: justify;
+}
+
+.is-singleline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-liststyle {
+  list-style: none;
+}
+
+.text-light {
+  font-weight: normal;
+  * {
+    font-weight: normal;
+  }
+}
+
+.text-semi {
+  font-weight: 500;
+  * {
+    font-weight: 500;
+  }
+}
+
+.text-bold {
+  font-weight: 600;
+  * {
+    font-weight: 600;
+  }
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.text--lg {
+  font-size: var(--font-text-lg);
+  line-height: 1.2;
+}
+
+.text--md {
+  font-size: var(--font-text-md);
+  line-height: 1.5;
+}
+
+.text--sm {
+  font-size: var(--font-text-sm);
+  line-height: 1.4;
+}
+
+.line-height--1 {
+  line-height: 1.2;
+}
+
+.is-column {
+  ul {
+    columns: 2;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+}

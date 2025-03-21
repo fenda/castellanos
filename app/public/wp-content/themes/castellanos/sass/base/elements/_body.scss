@@ -1,0 +1,5 @@
+@use "../../abstracts/variables/colors" as *;
+
+body {
+  background-color: $body-bg;
+}

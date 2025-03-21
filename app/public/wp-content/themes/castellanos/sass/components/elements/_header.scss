@@ -1,0 +1,172 @@
+@use "../../abstracts/variables/colors" as *;
+
+.header {
+  position: absolute;
+  z-index: 4;
+  padding: 20px 0;
+  width: 100%;
+
+  @media screen and (max-width: 940px) {
+    padding: 15px 0 10px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__toplinks {
+    a {
+      padding: 0 15px;
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    width: 310px;
+    transition: 0.5s;
+    display: block;
+
+    @media screen and (max-width: 940px) {
+      width: 180px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 940px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($secondary, 0.8);
+    z-index: 100;
+
+    &.animate {
+      .header__logo {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.featured {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+  min-height: 500px;
+
+  @media screen and (max-width: 940px) {
+    background-color: $secondary;
+    padding-top: 85px;
+
+    & > img {
+      margin-top: 85px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    min-height: 340px;
+  }
+
+  &:not(.featured--home) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(44, 71, 83);
+      background: linear-gradient(
+        180deg,
+        rgba(44, 71, 83, 0.8043811274509804) 0%,
+        rgba(44, 71, 83, 0.39821866246498594) 100%
+      );
+    }
+  }
+
+  &--home {
+    height: 800px;
+    overflow: hidden;
+    @media screen and (max-width: 680px) {
+      align-items: flex-end;
+      height: 700px;
+      padding-bottom: 30px;
+    }
+
+    .wrapper {
+      padding-top: 150px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @media screen and (max-width: 680px) {
+        object-position: 60% bottom;
+      }
+    }
+
+    @media screen and (max-width: 680px) {
+      .width-50 {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 50%;
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (max-width: 420px) {
+      gap: 10px;
+    }
+  }
+}
+
+.pagetitle {
+  pointer-events: none;
+  & > div {
+    padding: 15px 20px;
+  }
+
+  &__parent {
+    text-align: right;
+    white-space: nowrap;
+    @media screen and (min-width: 481px) {
+      min-width: 35%;
+    }
+  }
+
+  &__self {
+    min-width: 70%;
+    text-align: left;
+    gap: 20px;
+  }
+}

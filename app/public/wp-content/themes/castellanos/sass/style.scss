@@ -1,0 +1,108 @@
+/*!
+Theme Name: Castellanos
+Theme URI: 
+Author: Fernanda Sampaio
+Author URI: https://hypeberries.com
+Description: Website for Castellanos done with underscore theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cstln
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+cstln is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+@forward "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@forward "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@forward "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@forward "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@forward "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+@forward "layouts/home"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@forward "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@forward "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@forward "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@forward "utilities/alignments";
+
+/* Utils
+--------------------------------------------- */
+@forward "utilities/colors";
+@forward "utilities/typography";
+@forward "utilities/utils";

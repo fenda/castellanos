@@ -1,0 +1,55 @@
+@use "../abstracts/variables/colors" as *;
+
+.color-accent {
+  color: $accent;
+  fill: $accent;
+}
+
+.color-secondary {
+  color: $secondary;
+  fill: $secondary;
+}
+
+.color-dark {
+  color: #000;
+  fill: #000;
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+.color-light {
+  color: #fff;
+  fill: #fff;
+}
+
+.color-greylight {
+  color: $grey-light;
+}
+.color-grey {
+  color: #9b9b9b;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-bg-accent {
+  background: $accent;
+}
+
+.color-bg-grey {
+  background: $grey;
+}
+
+.color-bg-greylight {
+  background: $grey-light;
+}
+
+.color-bg-light {
+  background: #fff !important;
+}
+.color-bg-dark {
+  background: #000;
+}

@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  &--lg {
+    max-width: 1440px;
+    padding: 0;
+  }
+  // &--sm {
+  //   max-width: 940px;
+  // }
+}
+
+#primary {
+  overflow: hidden;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+  }
+}

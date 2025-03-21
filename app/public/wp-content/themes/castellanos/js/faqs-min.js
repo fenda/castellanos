@@ -1,0 +1,1 @@
+const buttons=document.querySelectorAll(".js-openQ");buttons.forEach((e=>{e.addEventListener("click",(()=>{e.parentElement.classList.contains("faqlist__item--open")?e.parentElement.classList.remove("faqlist__item--open"):(buttons.forEach((e=>{e.parentElement.classList.remove("faqlist__item--open")})),e.parentElement.classList.add("faqlist__item--open"))}))}));

@@ -1,0 +1,42 @@
+/* Navigation
+--------------------------------------------- */
+@forward "navigation/navigation";
+
+/* Posts and pages
+--------------------------------------------- */
+@forward "content/posts-and-pages";
+
+/* Comments
+--------------------------------------------- */
+@forward "comments/comments";
+
+/* Widgets
+--------------------------------------------- */
+@forward "widgets/widgets";
+
+/* Media
+--------------------------------------------- */
+@forward "media/media";
+
+/* Captions
+--------------------------------------------- */
+@forward "media/captions";
+
+/* Galleries
+--------------------------------------------- */
+@forward "media/galleries";
+
+/* Elements
+--------------------------------------------- */
+@forward "elements/header";
+@forward "elements/footer";
+@forward "elements/cards";
+@forward "elements/calltoaction";
+@forward "elements/awards";
+@forward "elements/testimonials";
+@forward "elements/team";
+@forward "elements/cptlist";
+// @forward "elements/practice_areas";
+@forward "elements/contact";
+// @forward "elements/milestones";
+@forward "elements/faq";

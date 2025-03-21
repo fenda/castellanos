@@ -1,0 +1,61 @@
+@use "../../abstracts/variables/typography" as *;
+@use "../../abstracts/variables/colors" as *;
+
+// button
+.button,
+button,
+input[type="button"],
+input[type="reset"] {
+  position: relative;
+  font-family: $font__main;
+  background: $accent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  fill: #fff;
+
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid $accent;
+  text-decoration: none;
+  border-radius: 0;
+  text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-color: #fff;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.button {
+  &--outline {
+    background: transparent;
+    color: $accent;
+    border: 1px solid $accent;
+
+    &:hover {
+      border-color: $accent;
+      color: $accent;
+      background: #fff;
+    }
+  }
+
+  &--small {
+    font-size: 0.875rem;
+    padding: 5px 15px;
+  }
+}

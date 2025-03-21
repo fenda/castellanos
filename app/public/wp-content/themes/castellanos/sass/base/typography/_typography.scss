@@ -1,0 +1,18 @@
+@use "fonts";
+@use "headings";
+@use "copy";
+
+@use "../../abstracts/variables/typography" as *;
+@use "../../abstracts/variables/colors" as *;
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $color__text-main;
+  font-family: $font__main;
+  font-size: var(--font-body);
+  line-height: $font__line-height-body;
+}
